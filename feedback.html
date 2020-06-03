@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="description" content="Homepage of Zarmaans website.">
+    <meta name="keywords" content="zarmaan, store, shop, Karachi, accessories">
+    <meta http-equiv="author" content="Zarmaan Khan">
+    <title>Feedback</title>
+    <script src="JS/head.js"></script>
+</head>
+
+<body>
+    <script src="JS/before.js"></script>
+
+    <div class="content">
+        <form action="/sendfeedback.php" method="POST" target="_blank">
+        <fieldset>
+            <legend>Feedback</legend>
+
+            <div class="d-flex flex-row">
+                <div class="col d-flex flex-column">
+                    <label for="Name">Your Full Name:</label>
+                    <label for="Email">Your Email Address:</label>
+                    <label for="Feedback">Your Feedback:</label>
+                </div>
+                <div class="col d-flex flex-column">
+                    <input type="text" id="Name" placeholder="Your full name" required>
+                    <input type="email" id="Email" placeholder="example@example.com">
+                    <textarea name="feedback" id="Feedback" cols="30" rows="10"
+                        placeholder="Enter your Feedback here." required></textarea>
+                </div>
+            </div>
+            <div class="center"><input type="submit" class="bt1" value="Send Feedback"></div>
+        </fieldset>
+        </form>
+    </div>
+
+    <script src="JS/after.js"></script>
+</body>
+
+</html>
